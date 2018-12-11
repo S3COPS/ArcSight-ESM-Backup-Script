@@ -8,6 +8,9 @@ This procedure is for backing up the CORR-Engine and restoring it to the same ma
 
 This does not cover backup and restore of the any connectors installed on this machine. To back up the entire installation in one operation, stop all services and make a copy of /opt/arcsight on another storage medium. Include /etc/hosts and /etc/init.d. This can take a long time, if you have terabytes of data.
 
+**WARNING - this script will stop the ArcSight Manager services, therefore there will be a period where events are not being received and analysts cannot access the Console. The process should take less than 20 minutes in total, but please ensure you dont run this script on a production instance without testing and appropriate Change Control approval.**
+you can carry out these backups with the manager services running, but there is no guarantee that the data will be complete when you need to restore it.
+
 ## Script Steps ##
 - **Stop services:** shut down all services except the mysqld service and the postgresql service.
 - **Back up files:** Backup critical files and folders as defined in the above technical note
