@@ -13,7 +13,7 @@ This does not cover backup and restore of the any connectors installed on this m
 - **Back up files:** Backup critical files and folders as defined in the above technical note
 - **Export system tables:** Runs the export_system_tables command
 - **Back up configuration data:** Runs the configbackup command:
-- **Backup the PostgreSQL archive Metadata: **
+- **Backup the PostgreSQL archive Metadata:**
 - **Restarts Services:**
 - **Compress the output:** from all the tasks above and tar into a file for export to secure backups / other media
 
