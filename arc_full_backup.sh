@@ -14,7 +14,7 @@
 #
 ### Set Globals
 #
-indeo="$(whoami)"; # get the name of the user executing this script
+WHO="$(whoami)"; # get the name of the user executing this script
 BKPFOLDER=/opt/arcsight/BACKUPS/ESM_BACKUP_`date "+%Y-%m-%d"`/
 BKPFILE=ESM_BACKUP_`date "+%Y-%m-%d"`
 LOGFILE="/opt/arcsight/BACKUPS/arc_backup_log.txt"; # define the log file
