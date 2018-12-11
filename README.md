@@ -10,7 +10,9 @@ This procedure is for backing up the CORR-Engine and restoring it to the same ma
 This does not cover backup and restore of the any connectors installed on this machine. To back up the entire installation in one operation, stop all services and make a copy of /opt/arcsight on another storage medium. Include /etc/hosts and /etc/init.d. This can take a long time, if you have terabytes of data.
 
 **WARNING - this script will stop the ArcSight Manager services, therefore there will be a period where events are not being received and analysts cannot access the Console. The process should take less than 20 minutes in total, but please ensure you dont run this script on a production instance without testing and appropriate Change Control approval.**
-you can carry out these backups with the manager services running, but there is no guarantee that the data will be complete when you need to restore it.
+
+
+You can carry out these backups with the manager services running, but there is no guarantee that the data will be complete when you need to restore it.
 
 **Assumptions:**
 - ArcSight is installed in default folder locations (/opt/arcsight/)
@@ -40,6 +42,8 @@ If you dont want to do certain tasks (i.e. Export System Tables) then comment ou
 
 ## Output ##
 The script will create a tar.gz file within the /opt/arcsight/BACKUPS folder called "ESM_BACKUP_<DATE>.tar.gz"
+
+This file should then be copied off the ESM Server for disaster recovery and backup purposes. An SCP function can easily be added to the script to automate this if desired.
  
 ## Restoring the data ##
 This is not part of the script and probably never should be as it will depend on what data you need to restore.
@@ -49,5 +53,4 @@ To get the data back in a format ready to restore - as per the current ArcSight 
 - Copy the files to the relevant locations for restoration.
   
   
-  ## No guarantees or support, use at your own risk following suitable testing ##
-  ## Caveat Emptor ##
+  ## Caveat Emptor: No guarantees or support, use at your own risk following suitable testing ##
