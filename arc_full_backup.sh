@@ -3,6 +3,7 @@
 #############################################################################################################
 # Name: ArcSight ESM Full System Backup script
 # Author: S3COPS
+# Source location: https://github.com/S3COPS/ArcSight-ESM-Backup-Script
 # Version: 0.1 (Alpha)
 # Supported OS Version(s): RHEL / CENTOS 7.x
 # Supported ArcSight ESM Version: Tested on ESM 7.0
