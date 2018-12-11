@@ -1,6 +1,7 @@
 # ArcSight-ESM-Backup-Script #
 Based on the info from within:
 Microfocus ArcSight ESM Software Version: 7.0 Technical Note: CORR-Engine Backup and Recovery - For Compact Mode Only
+[https://community.softwaregrp.com/t5/ESM-and-ESM-Express/tkb-p/esm]
 
 **Note: The script applies to ArcSight ESM with CORR-Engine in compact mode only.**
 
