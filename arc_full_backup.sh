@@ -111,7 +111,7 @@ sleep 5s
 function configBackup(){
 # Backup ArcSight Configuration
 	echo '=============================================================================================='
-	echo 'Carrying our ArcSight Configuration Backup.....'
+	echo 'Carrying out ArcSight Configuration Backup.....'
 	echo -e $arcTimeStamp 'Carrying out ArcSight Configuration Backup..... ' >> $LOGFILE # Append entry to the log
 	echo '=============================================================================================='
 	sleep 2s
